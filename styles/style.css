@@ -147,5 +147,99 @@ header .mdi {
 }
 
 .content {
+  display: grid;
   background-color: var(--content-color);
+  grid-template-columns: 2fr 1fr;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+  gap: 30px;
+  font-size: 0.85rem;
+}
+
+.projects h2,
+.announcements h2,
+.trending h2 {
+  margin: 30px 0 0 15px;
+  font-size: 1rem;
+}
+
+.project-cards h3,
+.announcements h3,
+.trending h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.announcements h3 {
+  font-size: 0.9rem;
+}
+
+.project-card {
+  height: 200px;
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: white;
+  border-left: 8px solid orange;
+  color: grey;
+  overflow: auto;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-board hr {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.announcements h2,
+.trending h2 {
+  margin: 10px 0 20px 0;
+}
+
+.announcements {
+  padding: 15px;
+}
+
+.announcement-board {
+  background-color: white;
+  padding: 15px 30px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.trending-board {
+  background-color: white;
+  padding: 15px 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.trending {
+  padding: 15px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.user div p:last-child {
+  color: grey;
+}
+
+.user img {
+  height: 2rem;
 }

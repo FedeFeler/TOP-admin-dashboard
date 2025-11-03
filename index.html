@@ -5,10 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css">
 </head>
 <body>
   <div class="container">
-    <nav class="dashboard"></nav>
+    <nav class="dashboard">
+      <div class="dashboard-title"><span class="mdi mdi-view-grid"></span><h1>Dashboard</h1></div>
+      <ul>
+        <li><a href="#">
+<span class="mdi mdi-home"></span><span class="nav-element">Home</span></a></li>
+        <li><a href="#">
+<span class="mdi mdi-card-account-details"></span><span class="nav-element">Profile</span></a></li>
+        <li><a href="#">
+<span class="mdi mdi-message"></span><span class="nav-element">Messages</span></a></li>
+        <li><a href="#">
+<span class="mdi mdi-clock-time-three"></span><span class="nav-element">History</span></a></li>
+        <li><a href="#">
+<span class="mdi mdi-file-clock"></span><span class="nav-element">Tasks</span></a></li>
+        <li><a href="#"><span class="mdi mdi-account-group"></span><span class="nav-element">
+Communities</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><span class="mdi mdi-cog"></span><span class="nav-element">Settings</span></a></li>
+        <li><a href="#"><span class="mdi mdi-help-box"></span><span class="nav-element">Support</span></a></li>
+        <li><a href="#"><span class="mdi mdi-shield-check icon"></span><span class="nav-element">Privacy</span></a></li>
+      </ul>
+    </nav>
     <header class="header"></header>
     <div class="content"></div>
   </div>

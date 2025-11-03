@@ -8,6 +8,7 @@
 
 :root {
   --dashboard-color: rgb(24, 152, 211);
+  --content-color: rgb(223, 223, 223);
   font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
@@ -63,10 +64,88 @@
 
 .header {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.search {
+  padding: 15px 30px;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+header .mdi {
+  font-size: 1.2rem;
+}
+
+.search-input {
+  background-color: var(--content-color);
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  width: 100%;
+  min-width: 200px;
+}
+
+.profile {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+  font-weight: 600;
+}
+
+.profile img {
+  height: 2rem;
+}
+
+.greeting {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.greeting-text p:first-of-type {
+  font-size: 0.75rem;
+}
+
+.greeting-text p:last-of-type {
+  font-size: 1.2rem;
+}
+
+.greeting img {
+  height: 3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+}
+
+.input-file {
+  display: none;
+}
+
+.buttons button,
+.input-file-label {
+  background-color: var(--dashboard-color);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: white;
 }
 
 .content {
-  grid-column: 2;
-  grid-row: 2 / -2;
-  background-color: rgb(238, 238, 238);
+  background-color: var(--content-color);
 }
